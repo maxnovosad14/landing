@@ -1,0 +1,93 @@
+ .wrapper {
+  display: flex;
+  flex-direction: column;
+ }
+
+.container {
+    min-height: 601px;
+    max-width: 335px;
+    margin: 0 auto;
+    padding: 33px 20px;
+    box-sizing: content-box;
+    z-index: 50;
+ }
+
+ .opacity-block {
+    height: 601px;
+    width: 40%;
+    position: absolute;
+    background: radial-gradient(118.67% 101.66% at 141.47% 78.12%,
+      #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  }
+ .bg_img {
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   width: 100%;
+    top: 0;
+    left: 0;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 62px;
+  }
+  .button-contact{
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #F84646;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    line-height: 20px;
+  }
+  button.burger {
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    border: none;
+    background: none;
+
+  }
+  .text {
+    text-align: center;
+  }
+    .title {
+      line-height: 58px;
+      font-size: 42px;
+      margin-bottom: 30px;
+    }
+    .subtitle {
+      line-height: 23px;
+      font-size: 12px;
+      width: 100%;
+      letter-spacing: 0.2px;
+      margin-bottom: 43px;
+    }
+  .input {
+    background: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px 5px 21px;
+
+    .contact-info {
+      width: 210px;
+      outline: none;
+      border: none;
+      font-size: 14px;
+      font-family: "Manrope";
+    }
+    .btn-reg {
+      border: none;
+      border-radius: 8px ;
+      padding: 16px 18px;
+      background: #F84646;
+    }
+  }
+
+
