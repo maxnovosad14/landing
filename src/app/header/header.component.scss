@@ -1,93 +1,265 @@
- .wrapper {
+$xs: 375px;
+$md: 1024px;
+$lg: 1440px;
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
- }
+  align-items: center;
+}
+
+.bg-img_container {
+  width: 100%;
+  min-height: 601px;
+  max-height: 754px;
+  position: absolute;
+}
+
+.burger {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+
+  @media (min-width: $md) {
+    display: none;
+  }
+}
+
+.opacity-block {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: radial-gradient(
+    118.67% 101.66% at 141.47% 78.12%,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: 50;
+
+  @media (min-width: $md) {
+    display: none;
+  }
+}
+
+.bg_img {
+  height: 601px;
+  width: 100%;
+  background: url("/assets/PhoneImage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+
+  @media (min-width: $md) {
+    background: url("/assets/midIMG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: $lg) {
+    height: 754px;
+    width: 100%;
+    position: absolute;
+    background-image: url("/assets/MainImg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 
 .container {
-    min-height: 601px;
-    max-width: 335px;
-    margin: 0 auto;
-    padding: 33px 20px;
-    box-sizing: content-box;
-    z-index: 50;
- }
+  max-width: 1196px;
+  min-width: 335px;
+  height: 481px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 55;
 
- .opacity-block {
-    height: 601px;
-    width: 40%;
-    position: absolute;
-    background: radial-gradient(118.67% 101.66% at 141.47% 78.12%,
-      #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  @media (min-width: $md) {
+    width: 900px;
+    height: 485px;
+    margin: 0 40px 127px 30px;
   }
- .bg_img {
-   height: 100%;
-   width: 100%;
-   position: absolute;
-   width: 100%;
-    top: 0;
-    left: 0;
+
+  @media (min-width: $lg) {
+    width: 1197px;
+    height: 571px;
+    margin: 0 122px 148px;
+    :nth-child(1) {
+      align-self: flex-end;
+    }
   }
-  header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 62px;
+}
+
+.header {
+  width: 335px;
+  height: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 35px 0px 62px;
+
+  @media (min-width: $md) {
+    width: 805px;
+    height: 40px;
+    margin-left: 106px;
+    margin-bottom: 86px;
   }
-  .button-contact{
+
+  @media (min-width: $lg) {
+    margin-bottom: 125px;
+  }
+
+  .nav {
     font-size: 14px;
     font-weight: 700;
-    background-color: #F84646;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    text-align: center;
     line-height: 20px;
   }
-  button.burger {
-    width: 32px;
-    height: 32px;
-    margin: 0;
-    border: none;
-    background: none;
+}
 
+ul {
+  display: none;
+  a {
+    font-weight: 700;
+    color: black;
   }
-  .text {
-    text-align: center;
-  }
-    .title {
-      line-height: 58px;
-      font-size: 42px;
-      margin-bottom: 30px;
-    }
-    .subtitle {
-      line-height: 23px;
-      font-size: 12px;
-      width: 100%;
-      letter-spacing: 0.2px;
-      margin-bottom: 43px;
-    }
-  .input {
-    background: #FFFFFF;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
+  @media (min-width: $md) {
+    display: inline-flex;
     align-items: center;
-    padding: 5px 5px 5px 21px;
+    justify-content: flex-end;
+  }
+}
+li {
+  padding-right: 40px;
+}
 
-    .contact-info {
-      width: 210px;
-      outline: none;
-      border: none;
-      font-size: 14px;
-      font-family: "Manrope";
-    }
-    .btn-reg {
-      border: none;
-      border-radius: 8px ;
-      padding: 16px 18px;
-      background: #F84646;
-    }
+.button-contact {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #f84646;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  line-height: 20px;
+}
+
+.content {
+  width: 335px;
+  height: 379.85px;
+  text-align: center;
+  max-width: 700px;
+  min-width: 335px;
+}
+
+.title,
+.subtitle,
+.input {
+  text-align: center;
+}
+
+.title {
+  font-size: 42px;
+  line-height: 57.5px;
+  margin-bottom: 30px;
+  @media (min-width: $md) {
+    width: 720px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 56px;
+    line-height: 74px;
+  }
+  @media (min-width: $lg) {
+    width: 850px;
+    font-size: 64px;
+    line-height: 82px;
+  }
+}
+.subtitle {
+  font-size: 12px;
+  line-height: 23px;
+  margin-bottom: 43px;
+  @media (min-width: $md) {
+    height: 99px;
+    width: 565px;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  @media (min-width: $lg) {
+    height: 150px;
+    width: 650px;
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 50px;
+  }
+}
+.input {
+  width: 335px;
+  height: 59.85px;
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+
+  @media (min-width: $md) {
+    width: 422px;
+    height: 73px;
   }
 
+  @media (min-width: $lg) {
+    width: 502px;
+  }
+}
 
+.contact-info {
+  width: 194.19px;
+  height: 29.52px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-family: "Manrope";
+  line-height: 36px;
+  margin: 14px 24.45px 14px 21.35px;
+
+  @media (min-width: $md) {
+    width: 244.63px;
+    height: 36px;
+    margin: 19px 31.1px 18px 26.9px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $lg) {
+    width: 254px;
+    margin-left: 32px;
+    margin-right: 74px;
+  }
+}
+
+.btn-reg {
+  border: none;
+  border-radius: 8px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  background: #f84646;
+  font-weight: 700;
+  width: 90.76px;
+  height: 50.01px;
+  font-size: 14px;
+  margin: 5px 5px 5px 0;
+
+  @media (min-width: $md) {
+    width: 114.33px;
+    height: 61px;
+    font-size: 16px;
+    margin: 5px 6px 5px 0;
+  }
+
+  @media (min-width: $lg) {
+    width: 136px;
+  }
+}
