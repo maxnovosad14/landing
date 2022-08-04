@@ -200,7 +200,7 @@ li {
 }
 .input {
   width: 335px;
-  height: 59.85px;
+  height: 60px;
   background: #ffffff;
   border-radius: 8px;
   display: flex;
@@ -217,7 +217,6 @@ li {
 
 .contact-info {
   width: 194.19px;
-  height: 29.52px;
   outline: none;
   border: none;
   font-size: 14px;
@@ -228,7 +227,7 @@ li {
   @media (min-width: $md) {
     width: 244.63px;
     height: 36px;
-    margin: 19px 31.1px 18px 26.9px;
+    margin: 19px 31.1px 19px 26.9px;
     font-size: 16px;
   }
 

@@ -5,9 +5,16 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { InformationComponent } from './components/information/information.component';
 import { ProvidingComponent } from './components/providing/providing.component';
+import { ManagementComponent } from './components/management/management.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, InformationComponent, ProvidingComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    InformationComponent,
+    ProvidingComponent,
+    ManagementComponent,
+  ],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],
