@@ -5,12 +5,14 @@
 }
 .wrapper {
   width: 100%;
+  @media (min-width: $md) {
+    height: unset;
+  }
 }
 
 .container {
   margin: 90px auto 79px;
   width: 338px;
-
   @media (min-width: $md) {
     margin-top: 160px;
     margin-bottom: 160px;
@@ -42,7 +44,6 @@
 
 .box1 {
   height: 100%;
-
   @media (min-width: $md) {
     margin-bottom: 120px;
   }
@@ -52,6 +53,7 @@
   }
 }
 .box2 {
+  height: 100%;
   @media (min-width: $md) {
     :nth-child(2) {
       margin-right: 0;
