@@ -7,6 +7,7 @@ import { InformationComponent } from './components/information/information.compo
 import { ProvidingComponent } from './components/providing/providing.component';
 import { ManagementComponent } from './components/management/management.component';
 import { ReferencesComponent } from './components/references/references.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ReferencesComponent } from './components/references/references.componen
     ProvidingComponent,
     ManagementComponent,
     ReferencesComponent,
+    ContactComponent,
   ],
   imports: [BrowserModule],
   providers: [],

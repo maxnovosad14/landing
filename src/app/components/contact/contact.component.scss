@@ -1,0 +1,75 @@
+@import "variables";
+
+.wrapper {
+  width: 100%;
+  padding-top: 90px;
+
+  @media (min-width: $md) {
+    padding-top: 160px;
+  }
+}
+
+.container {
+  width: 335px;
+  margin: 0 auto 82px;
+  text-align: center;
+
+  @media (min-width: $md) {
+    width: 690px;
+    margin-bottom: 160px;
+  }
+}
+
+.svg {
+  margin-bottom: 20px;
+
+  @media (min-width: $md) {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+}
+
+.title {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 32px;
+  margin-bottom: 12px;
+
+  @media (min-width: $md) {
+    font-weight: 800;
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 20px;
+
+  @media (min-width: $md) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+}
+
+.button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  width: 124px;
+  height: 42px;
+  background: #f84646;
+  border-radius: 8px;
+
+  @media (min-width: $md) {
+    font-weight: 600;
+    font-size: 24px;
+    width: 204px;
+    height: 70px;
+  }
+}
